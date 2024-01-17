@@ -27,6 +27,7 @@ return {
       "helm_ls",
       "terraformls",
       -- "csharp_ls",
+      "bashls",
     }
 
     local tools = {

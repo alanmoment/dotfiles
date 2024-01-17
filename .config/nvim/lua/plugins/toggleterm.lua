@@ -4,7 +4,8 @@ return {
   config = function()
     local toggleterm = require('toggleterm')
     toggleterm.setup {
-      open_mapping = [[<c-\>]],
+      -- open_mapping = [[<c-\>]],
+      open_mapping = '<leader>\\',
       direction = "float",
       float_opts = {
         border = 'curved',

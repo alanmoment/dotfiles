@@ -117,15 +117,16 @@ export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 #[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 #[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-alias helm=/Users/alan/bin/helm-v3.11
+# alias helm=/Users/alan/bin/helm-v3.11
 alias kustomize=/Users/alan/bin/kustomize-v4.5.4
 alias oras=/Users/alan/bin/oras
-alias terraform=/Users/alan/bin/terraform-v1.1.9
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
+#alias terraform=/Users/alan/bin/terraform-v1.1.9
+alias grafterm=/Users/alan/bin/grafterm-v0.2.0
 alias git='LANG=en_US git'
 alias lg='LANG=en_US lazygit'
+alias lc='colorls -lA --sd --dark'
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 export FZF_DEFAULT_COMMAND='fd --type f'
 _fzf_compgen_path() {
@@ -135,3 +136,10 @@ _fzf_compgen_path() {
 _fzf_compgen_dir() {
   fd --type d --hidden --follow --exclude ".git" . "$1"
 }
+
+eval $(thefuck --alias)
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+

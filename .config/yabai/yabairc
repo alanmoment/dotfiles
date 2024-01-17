@@ -41,3 +41,8 @@ yabai -m rule --add app="^SSH Tunnel Manager$" manage=off
 yabai -m rule --add app="^EaseUS RecExperts$" manage=off
 yabai -m rule --add app="^Docker$" manage=off
 yabai -m rule --add app="^1Password 6$" manage=off
+yabai -m rule --add app="^Cyberduck$" manage=off
+yabai -m rule --add app="^Alfred 5$" manage=off
+yabai -m rule --add app="^Bartender 4$" manage=off
+yabai -m rule --add app="^Spotify$" manage=off
+yabai -m rule --add app="^Launcher$" manage=off

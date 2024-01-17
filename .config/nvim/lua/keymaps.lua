@@ -38,6 +38,8 @@ keymap("n", "<ESC>", ":noh<CR>", default_opts)
 -- Use cp shortcut to copy editing file path
 keymap("n", "cp", ":let @+=expand('%:p')<CR>", default_opts)
 
+keymap("n", "<leader>=", "gg0vG$y", default_opts)
+
 -- yank word and paste without override register
 keymap("x", "p", "pgvy", default_opts)
 
@@ -52,7 +54,15 @@ keymap("n", "<leader>+", "<C-a>") -- increment
 keymap("n", "<leader>-", "<C-x>") -- decrement
 
 -- window management
-keymap("n", "<leader>sv", "<C-w>v") -- split window vertically
+keymap("n", "<C-w>|", "<C-w>v") -- split window vertically
+keymap("n", "<C-w>-", "<C-w>s") -- split window horizontally
+keymap("n", "<leader>sv", "<C-w>h") -- split window vertically
 keymap("n", "<leader>sh", "<C-w>s") -- split window horizontally
-keymap("n", "<leader>se", "<C-w>=") -- make split windows equal width & height
+keymap("n", "<leader>se", "<-w>=") -- make split windows equal width & height
 keymap("n", "<leader>sx", ":close<CR>") -- close current split window
+-- Tmux window management
+-- now can use C-hjkl
+-- keymap("n", "<C-w><C-h>", ":TmuxNavigateLeft", default_opts)
+-- keymap("n", "<C-w><C-l>", ":TmuxNavigateRight", default_opts)
+-- keymap("n", "<C-w><C-j>", ":TmuxNavigateDown", default_opts)
+-- keymap("n", "<C-w><C-k>", ":TmuxNavigateUp", default_opts)
