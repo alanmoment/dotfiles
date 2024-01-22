@@ -7,6 +7,6 @@ return {
     local flash = require('flash')
     flash.setup {}
 
-    api.nvim_set_hl(0, "FlashLabel", { ctermbg = 161, bold = true })
+    -- api.nvim_set_hl(0, "FlashLabel", { ctermbg = 161, bold = true })
   end,
 }

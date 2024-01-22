@@ -136,10 +136,10 @@ return {
     keymap.set('n', 'ep', diagnostic.goto_prev, opts)
     keymap.set('n', 'en', diagnostic.goto_next, opts)
 
-    -- color
-    local api = vim.api
-    api.nvim_set_hl(0, "NormalFloat", { ctermbg = 234 })
-    api.nvim_set_hl(0, "FloatBorder", { ctermbg = 234 })
-    api.nvim_set_hl(0, "LspSignatureActiveParameter", { bold = true, ctermbg = 52 })
+    -- -- color
+    -- local api = vim.api
+    -- api.nvim_set_hl(0, "NormalFloat", { ctermbg = 234 })
+    -- api.nvim_set_hl(0, "FloatBorder", { ctermbg = 234 })
+    -- api.nvim_set_hl(0, "LspSignatureActiveParameter", { bold = true, ctermbg = 52 })
   end,
 }

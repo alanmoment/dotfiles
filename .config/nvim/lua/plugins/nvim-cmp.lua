@@ -117,17 +117,17 @@ return {
     })
 
     -- cmp menu color
-    local api = vim.api
-    api.nvim_set_hl(0, "CmpPmenu", { ctermbg = 234 })
-    api.nvim_set_hl(0, "CmpPmenuSel", { ctermbg = 238 })
-    api.nvim_set_hl(0, "CmpItemMenu", { ctermfg = 243 })
-    api.nvim_set_hl(0, "CmpItemAbbrMatch", { ctermfg = 81 })
-    api.nvim_set_hl(0, "CmpItemAbbrMatchFuzzy", { ctermfg = 81 })
-    api.nvim_set_hl(0, "CmpItemKindMethod", { ctermfg = 118 })
-    api.nvim_set_hl(0, "CmpItemKindFunction", { ctermfg = 118 })
-    api.nvim_set_hl(0, "CmpItemKindVariable", { ctermfg = 161 })
-    api.nvim_set_hl(0, "CmpItemKindClass", { ctermfg = 81 })
-    api.nvim_set_hl(0, "CmpItemKindModule", { ctermfg = 214 })
-    api.nvim_set_hl(0, "CmpItemKindConstant", { ctermfg = 135 })
+    -- local api = vim.api
+    -- api.nvim_set_hl(0, "CmpPmenu", { ctermbg = 234 })
+    -- api.nvim_set_hl(0, "CmpPmenuSel", { ctermbg = 238 })
+    -- api.nvim_set_hl(0, "CmpItemMenu", { ctermfg = 243 })
+    -- api.nvim_set_hl(0, "CmpItemAbbrMatch", { ctermfg = 81 })
+    -- api.nvim_set_hl(0, "CmpItemAbbrMatchFuzzy", { ctermfg = 81 })
+    -- api.nvim_set_hl(0, "CmpItemKindMethod", { ctermfg = 118 })
+    -- api.nvim_set_hl(0, "CmpItemKindFunction", { ctermfg = 118 })
+    -- api.nvim_set_hl(0, "CmpItemKindVariable", { ctermfg = 161 })
+    -- api.nvim_set_hl(0, "CmpItemKindClass", { ctermfg = 81 })
+    -- api.nvim_set_hl(0, "CmpItemKindModule", { ctermfg = 214 })
+    -- api.nvim_set_hl(0, "CmpItemKindConstant", { ctermfg = 135 })
   end,
 }

@@ -29,8 +29,8 @@ return {
     -- api.nvim_set_hl(0, "TabLineFill", { ctermfg = 255, ctermbg = 52 })
     -- api.nvim_set_hl(0, "TabLine", { ctermfg = 255, ctermbg = 52 })
     -- api.nvim_set_hl(0, "TabLineSel", { ctermfg = 255, ctermbg = 124 })
-    api.nvim_set_hl(0, "TabLineFill", { ctermfg = 255, ctermbg = 54 })
-    api.nvim_set_hl(0, "TabLine", { ctermfg = 255, ctermbg = 54 })
-    api.nvim_set_hl(0, "TabLineSel", { ctermfg = 255, ctermbg = 91 })
+    -- api.nvim_set_hl(0, "TabLineFill", { ctermfg = 255, ctermbg = 54 })
+    -- api.nvim_set_hl(0, "TabLine", { ctermfg = 255, ctermbg = 54 })
+    -- api.nvim_set_hl(0, "TabLineSel", { ctermfg = 255, ctermbg = 91 })
   end,
 }
