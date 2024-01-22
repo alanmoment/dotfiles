@@ -102,7 +102,7 @@ return {
     keymap("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
 
     -- color
-    local api = vim.api
+    -- local api = vim.api
     -- api.nvim_set_hl(0, "NvimTreeFolderName", { ctermfg = 81 })
     -- api.nvim_set_hl(0, "NvimTreeRootFolder", { ctermfg = 245 })
     -- api.nvim_set_hl(0, "NvimTreeFolderIcon", { ctermfg = 110 })
