@@ -56,13 +56,16 @@ keymap("n", "<leader>-", "<C-x>") -- decrement
 -- window management
 keymap("n", "<C-w>|", "<C-w>v") -- split window vertically
 keymap("n", "<C-w>-", "<C-w>s") -- split window horizontally
-keymap("n", "<leader>sv", "<C-w>h") -- split window vertically
+keymap("n", "<leader>sv", "<C-w>v") -- split window vertically
 keymap("n", "<leader>sh", "<C-w>s") -- split window horizontally
 keymap("n", "<leader>se", "<-w>=") -- make split windows equal width & height
-keymap("n", "<leader>sx", ":close<CR>") -- close current split window
+keymap("n", "<leader>sc", ":close<CR>") -- close current split window
 -- Tmux window management
 -- now can use C-hjkl
 -- keymap("n", "<C-w><C-h>", ":TmuxNavigateLeft", default_opts)
 -- keymap("n", "<C-w><C-l>", ":TmuxNavigateRight", default_opts)
 -- keymap("n", "<C-w><C-j>", ":TmuxNavigateDown", default_opts)
 -- keymap("n", "<C-w><C-k>", ":TmuxNavigateUp", default_opts)
+
+-- inc-rename
+keymap("n", "<S-r>", ":IncRename ")

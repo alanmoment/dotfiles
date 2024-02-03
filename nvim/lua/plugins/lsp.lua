@@ -23,17 +23,21 @@ return {
       "pyright",
       "tsserver",
       "jsonls",
-      --  "yamlls",
+      "yamlls",
       "helm_ls",
       "terraformls",
       -- "csharp_ls",
       "bashls",
+      "dockerls",
+      "powershell_es",
+      -- "azure_pipelines_ls",
     }
 
     local tools = {
       "prettier", -- prettier formatter
       "autopep8", -- python formatter
       "tflint",   -- terraform formatter
+      "yamllint", -- yaml formatter
     }
 
     local mason_tool_installer = require("mason-tool-installer")
