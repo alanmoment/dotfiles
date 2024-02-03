@@ -1,4 +1,5 @@
 # default layout (can be bsp, stack or float)
+yabai -m config external_bar all:32:0
 yabai -m config layout bsp
 
 # new window spawns to the right if vertical split, or bottom if horizontal split
@@ -46,3 +47,4 @@ yabai -m rule --add app="^Alfred 5$" manage=off
 yabai -m rule --add app="^Bartender 4$" manage=off
 yabai -m rule --add app="^Spotify$" manage=off
 yabai -m rule --add app="^Launcher$" manage=off
+yabai -m rule --add app="^Obsidian$" manage=off
