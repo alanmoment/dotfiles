@@ -9,8 +9,36 @@ set smartindent
 set tabstop=2
 set shiftwidth=2
 set expandtab
-set number
 
+:set number
+:augroup numbertoggle
+:  autocmd!
+:  autocmd BufEnter,FocusGained,InsertLeave,WinEnter * if &nu && mode() != "i" | set rnu   | endif
+:  autocmd BufLeave,FocusLost,InsertEnter,WinLeave   * if &nu                  | set nornu | endif
+:augroup END
+" turn absolute line numbers on
+"set number
+"set nu
+
+" turn absolute line numbers off
+"set nonumber
+"set nonu
+
+" toggle absolute line numbers
+"set number!
+"set nu!
+
+" turn relative line numbers on
+"set relativenumber
+"set rnu
+
+" turn relative line numbers off
+"set norelativenumber
+"set nornu
+
+" toggle relative line numbers
+"set relativenumber!
+"set rnu!
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim

@@ -6,11 +6,11 @@ yabai -m config layout bsp
 yabai -m config window_placement second_child
 
 # padding set to 12px
-yabai -m config top_padding 10
-yabai -m config bottom_padding 10
-yabai -m config left_padding 10
-yabai -m config right_padding 10
-yabai -m config window_gap 10
+yabai -m config top_padding 5
+yabai -m config bottom_padding 0
+yabai -m config left_padding 0
+yabai -m config right_padding 0
+yabai -m config window_gap 5
 
 # -- mouse settings --
 
@@ -27,6 +27,8 @@ yabai -m config mouse_action2 resize
 # when window is dropped in center of another window, swap them (on edges it will split it)
 yabai -m mouse_drop_action swap
 
+# enable specific apps
+yabai -m rule --add app="^Obsidian$" manage=on
 
 # disable specific apps
 yabai -m rule --add app="^System Settings$" manage=off
@@ -47,4 +49,6 @@ yabai -m rule --add app="^Alfred 5$" manage=off
 yabai -m rule --add app="^Bartender 4$" manage=off
 yabai -m rule --add app="^Spotify$" manage=off
 yabai -m rule --add app="^Launcher$" manage=off
-yabai -m rule --add app="^Obsidian$" manage=off
+yabai -m rule --add app="^行事曆$" manage=off
+yabai -m rule --add app="^Numi$" manage=off
+yabai -m rule --add app="^Alfred" manage=off

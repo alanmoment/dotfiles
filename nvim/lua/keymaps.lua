@@ -18,12 +18,15 @@ keymap("n", "<C-n>", ":tabnext<CR>", default_opts)
 keymap("n", "<C-p>", ":tabprev<CR>", default_opts)
 keymap("n", "<C-t>", ":tabnew<CR>", default_opts)
 
+-- Git History
+keymap("n", "<leader>,", ":Gitsigns toggle_current_line_blame<CR>", default_opts)
+
 -- Functional
 keymap("n", "<F5>", ":e!<CR>", default_opts)
 
 -- Panes
 keymap("n", "=", "<C-w>=", default_opts)
-keymap("n", "-", "<C-w>x", default_opts)
+-- keymap("n", "-", "<C-w>x", default_opts)
 keymap("n", "<C-h>", "<C-w>h", default_opts)
 keymap("n", "<C-j>", "<C-w>j", default_opts)
 keymap("n", "<C-k>", "<C-w>k", default_opts)
@@ -60,12 +63,13 @@ keymap("n", "<leader>sv", "<C-w>v") -- split window vertically
 keymap("n", "<leader>sh", "<C-w>s") -- split window horizontally
 keymap("n", "<leader>se", "<-w>=") -- make split windows equal width & height
 keymap("n", "<leader>sc", ":close<CR>") -- close current split window
+
 -- Tmux window management
--- now can use C-hjkl
--- keymap("n", "<C-w><C-h>", ":TmuxNavigateLeft", default_opts)
--- keymap("n", "<C-w><C-l>", ":TmuxNavigateRight", default_opts)
--- keymap("n", "<C-w><C-j>", ":TmuxNavigateDown", default_opts)
--- keymap("n", "<C-w><C-k>", ":TmuxNavigateUp", default_opts)
+-- keymap("n", "<C-[>", "<C-s>n", default_opts)
+-- keymap("n", "<M-h>", ":TmuxNavigateLeft<CR>", default_opts)
+-- keymap("n", "<M-j>", ":TmuxNavigateDown<CR>", default_opts)
+-- keymap("n", "<M-k>", ":TmuxNavigateUp<CR>", default_opts)
+-- keymap("n", "<M-l>", ":TmuxNavigateRight<CR>", default_opts)
 
 -- inc-rename
 keymap("n", "<S-r>", ":IncRename ")

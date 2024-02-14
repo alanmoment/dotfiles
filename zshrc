@@ -122,9 +122,14 @@ alias kustomize=/Users/alan/bin/kustomize-v4.5.4
 alias oras=/Users/alan/bin/oras
 #alias terraform=/Users/alan/bin/terraform-v1.1.9
 alias grafterm=/Users/alan/bin/grafterm-v0.2.0
+alias ob_backup="rsync -avhz --delete /Users/alan/Documents/Workspaces/devops/docs/Obsidian /Users/alan/Library/Mobile\ Documents/com~apple~CloudDocs/"
 alias git='LANG=en_US git'
 alias lg='LANG=en_US lazygit'
 alias lc='colorls -lA --sd --dark'
+function my_search() {
+    find . -type f -not -path '*/\.*' -exec grep -H --color=auto "$1" {} +
+}
+alias ag=my_search
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
@@ -137,7 +142,6 @@ _fzf_compgen_dir() {
   fd --type d --hidden --follow --exclude ".git" . "$1"
 }
 
-eval $(thefuck --alias)
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
@@ -147,3 +151,6 @@ export TMUXIFIER_LAYOUT_PATH=/Users/alan/Documents/resources/dev-environment/tmu
 export PATH="$HOME/.tmuxifier/bin:$PATH"
 eval "$(tmuxifier init -)"
 export EDITOR='nvim'
+
+eval $(thefuck --alias)
+eval "$(direnv hook bash)"
