@@ -52,3 +52,4 @@ yabai -m rule --add app="^Launcher$" manage=off
 yabai -m rule --add app="^行事曆$" manage=off
 yabai -m rule --add app="^Numi$" manage=off
 yabai -m rule --add app="^Alfred" manage=off
+yabai -m rule --add app="^Synology Chat" manage=off

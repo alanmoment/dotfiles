@@ -72,4 +72,4 @@ keymap("n", "<leader>sc", ":close<CR>") -- close current split window
 -- keymap("n", "<M-l>", ":TmuxNavigateRight<CR>", default_opts)
 
 -- inc-rename
-keymap("n", "<S-r>", ":IncRename ")
+-- keymap("n", "<S-r>", ":IncRename ")
