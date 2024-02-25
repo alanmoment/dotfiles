@@ -10,6 +10,9 @@ return {
   config = function()
     require('nvim-treesitter.configs').setup {
       auto_install = true, -- auto install the missing parse when enter the buffer
+      ensure_installed = {
+        "markdown_inline"
+      },
       highlight = {
         enable = true,
         disable = { "groovy", "java" },
