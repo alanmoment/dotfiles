@@ -1,4 +1,11 @@
 # dev-environment
 
-This is fork from https://github.com/josean-dev/dev-environment-files.git
+## References
 
+Dachi
+
+- https://gitlab.com/dachichang/dotfiles.git
+
+Josean
+
+- https://github.com/josean-dev/dev-environment-files
