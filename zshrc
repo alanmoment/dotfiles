@@ -125,7 +125,7 @@ alias grafterm=/Users/alan/bin/grafterm-v0.2.0
 alias ob_backup="rsync -avhz --delete /Users/alan/Documents/Workspaces/devops/docs/Obsidian /Users/alan/Library/Mobile\ Documents/com~apple~CloudDocs/"
 alias git='LANG=en_US git'
 alias lg='LANG=en_US lazygit'
-alias lc='colorls -lA --sd --dark'
+alias ls='colorls -lA --sd --dark'
 function my_search() {
     find . -type f -not -path '*/\.*' -exec grep -H --color=auto "$1" {} +
 }
@@ -147,7 +147,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
 [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
-export TMUXIFIER_LAYOUT_PATH=/Users/alan/Documents/resources/dev-environment/tmuxifier/layouts
+export TMUXIFIER_LAYOUT_PATH=/Users/alan/Documents/resources/dotfiles/tmuxifier/layouts
 export PATH="$HOME/.tmuxifier/bin:$PATH"
 eval "$(tmuxifier init -)"
 export EDITOR='nvim'
