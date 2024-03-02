@@ -8,6 +8,7 @@ return {
 
     g.better_whitespace_filetypes_blacklist = {
       "toggleterm",
+      "dashboard", -- disable for dashboard
     }
     keymap("n", "tm", ":StripWhitespace<CR>", default_opts)
   end,

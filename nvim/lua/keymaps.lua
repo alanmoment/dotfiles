@@ -64,12 +64,8 @@ keymap("n", "<leader>sh", "<C-w>s") -- split window horizontally
 keymap("n", "<leader>se", "<-w>=") -- make split windows equal width & height
 keymap("n", "<leader>sc", ":close<CR>") -- close current split window
 
--- Tmux window management
--- keymap("n", "<C-[>", "<C-s>n", default_opts)
--- keymap("n", "<M-h>", ":TmuxNavigateLeft<CR>", default_opts)
--- keymap("n", "<M-j>", ":TmuxNavigateDown<CR>", default_opts)
--- keymap("n", "<M-k>", ":TmuxNavigateUp<CR>", default_opts)
--- keymap("n", "<M-l>", ":TmuxNavigateRight<CR>", default_opts)
+-- buffer management
+keymap("n", "<leader>nv", ":vnew<CR>") -- open new buffer in vertical split
 
 -- inc-rename
 -- keymap("n", "<S-r>", ":IncRename ")
