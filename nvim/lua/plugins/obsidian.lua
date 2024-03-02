@@ -1,6 +1,6 @@
 return {
   "epwalsh/obsidian.nvim",
-  version = "*",  -- recommended, use latest release instead of latest commit
+  version = "*", -- recommended, use latest release instead of latest commit
   lazy = true,
   enabled = true,
   ft = "markdown",
@@ -15,7 +15,14 @@ return {
     -- Required.
     "nvim-lua/plenary.nvim",
 
-    -- see below for full list of optional dependencies 👇
+    -- Pickers
+    "nvim-telescope/telescope.nvim",
+
+    -- Completion
+    "hrsh7th/nvim-cmp",
+
+    -- Syntax highlighting
+    "nvim-treesitter/nvim-treesitter",
   },
   opts = {
     workspaces = {
@@ -25,6 +32,8 @@ return {
       },
     },
 
-    -- see below for full list of options 👇
+    ui = {
+      enable = true,
+    },
   },
 }
